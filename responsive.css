@@ -1,0 +1,95 @@
+@media screen and (max-width:576px) {
+    .home-inner-data h2{
+        font-size: 2rem;
+        font-family: 'Bodoni Moda', serif;
+    }
+    .about-sidebox{
+        height: 6vh;
+        margin-top: -10.3rem;   
+    }
+    .about-box{
+        margin-top: -7.1rem;
+    }
+    .about-box .about-text h6{
+        font-weight: 200;
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+    .about-box{
+        height: 75vh;
+    }
+    .Expertise{
+        margin-top: -3rem;
+    }
+    .extpertisebg{
+
+        height: 60vh;
+        background-image: url('./Images/expertise.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .Expertisetext h2{
+        margin-top: 4rem;
+        font-family: 'Bodoni Moda', serif;
+        color: var(--green);
+    }
+    .hide-sm{
+        display: none;
+    }
+    .hide-lg{
+        display: initial;
+    }
+    .Expertisetext{
+        padding: 0rem 2rem;
+        background-color: #F1F4F1;
+    }
+    .displayimg{
+        height: 50vh;
+        background-attachment: scroll;
+    }   
+    
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    .hide-sm{
+        display: none;
+    }
+    .hide-lg{
+        display: initial;
+    }  
+    .about-sidebox{
+        height: 8vh;
+        margin-top: -12.15rem;   
+    }
+    .about-box{
+        margin-top: -6rem;
+    }
+    .about-box .about-text h6{
+        font-weight: 200;
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+    .about-box{
+        height: 45vh;
+    }
+    .Expertise{
+        margin-top: -3rem;
+    }
+    .extpertisebg{
+
+        height: 40vh;
+        background-image: url('./Images/expertise.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .Expertisetext h2{
+        margin-top: 4rem;
+        font-family: 'Bodoni Moda', serif;
+        color: var(--green);
+    } 
+    .displayimg{
+        height: 50vh;
+    } 
+}
