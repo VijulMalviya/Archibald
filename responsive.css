@@ -48,7 +48,37 @@
         height: 50vh;
         background-attachment: scroll;
     }   
-    
+    .portraitimg1{
+        height: 40vh;
+    }
+    .portraittext{
+        height: 40vh;
+    }
+    .portraittext{
+       
+        align-items: flex-start;
+        padding-top: 2rem;
+    }
+    .OwnDetails{
+        height: 120vh;
+    }
+    .OwnDetails-box{
+        height: 50vh;
+    }
+    .Offer{
+        height: 40vh;
+    }
+    .Offer .Offer-box{
+        flex-direction: column;
+        text-align: center;
+    }
+    .Offer .sidebtn{
+        margin-top: 2rem;
+    }
+    .lowerfooter{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
 }
 
 @media screen and (min-width:768px) and (max-width:992px) {
@@ -57,6 +87,12 @@
     }
     .hide-lg{
         display: initial;
+    }
+    .Portrait .hide-sm{
+        display: initial;
+    }
+    .Portrait .hide-lg{
+        display: none;
     }  
     .about-sidebox{
         height: 8vh;
@@ -90,6 +126,28 @@
         color: var(--green);
     } 
     .displayimg{
-        height: 50vh;
+        height: 40vh;
     } 
+    .portraitimg1{
+        height: 40vh;
+    }
+    .portraittext{
+        height: 40vh;
+    }
+    .OwnDetails{
+        height: 60vh;
+    }
+    .OwnDetails-box{
+        height: 25vh;
+    }
+    .Offer .Offer-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    .Offer{
+        height: 20vh;
+    }
+    
 }

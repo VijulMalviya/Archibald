@@ -203,3 +203,186 @@ video{
     background-position: center;
     background-attachment: fixed;
 }
+
+
+.portraitimg1{
+    height: 100vh;
+    overflow: hidden;
+    border: 10px solid #F1F4F1;
+    border-left: 0px;
+    border-right: 0;
+
+    background-color: #F1F4F1;
+
+}
+
+.p1{
+    background-image: url('./Images/Straetmans-Wim-3-2-1-aspect-ratio-1-1-1.jpg.webp');
+}
+.p2{
+    background-image: url('./Images/JulienIvens_IMG_5544-aspect-ratio-1-1.jpeg.webp');
+}
+.portrait{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+.Portrait h2{
+    font-size: 2rem;
+    color: var(--green);
+    font-family: 'Bodoni Moda', serif;
+
+}
+.Portrait button{
+    border: 1px solid var(--green);
+    outline: none;
+    font-size: small;
+    color: var(--green);
+    background-color: white;
+    text-transform: uppercase;
+
+}
+.portraittext{
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F1F4F1;
+
+}
+.portraittext p{
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #4f4d4c;
+    letter-spacing: 0.5rem;
+}
+.portraittext h2{
+    font-family: 'Bodoni Moda', serif;
+    font-size: 2rem;
+    color: var(--green);
+}
+.portraittext h6{
+    color: var(--darkgreen);
+    font-size: small;
+    line-height: 1.5rem;
+}
+.portraittext button{
+    outline: none;
+    border: none;
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    font-size: small;
+    color: var(--green);
+    background-color: transparent;
+
+}
+
+.OwnDetails{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F1F4F1;
+
+}
+.OwnDetails h2{
+    font-family: 'Bodoni Moda', serif;
+    font-size: 2rem;
+    color: var(--green);
+}
+
+.OwnDetails p{
+    color: #4f4d4c;
+    line-height: 1.5rem;
+}
+.OwnDetails-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+.OwnDetails-text{
+    position: relative;
+    background-color: white;
+    height: 100%;
+}
+.OwnDetails button{
+    outline: none;
+    border: none;
+    position: absolute;
+    bottom: 1rem;
+    right: 2rem;
+    font-size: small;
+    color: var(--green);
+    background-color: transparent;
+
+}
+.Offer{
+    height: 30vh;
+    background-color: var(--green);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Offer .Offer-box{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.Offer h2{
+    font-family: 'Bodoni Moda', serif;
+    font-size: 2rem;
+    color: white;
+}
+.Offer .sidebtn{
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    background-color: var(--darkgreen);
+}
+footer  img{
+    width: 10rem;
+}
+footer ul{
+    margin: 0;
+    padding: 0;
+}
+footer ul li{
+    font-size: 0.7rem;
+    color: var(--white);
+    list-style: none;
+    margin-top: 0.8rem;
+    line-height: 1.5rem;
+
+}
+footer .head{
+    text-transform: uppercase;
+    color: var(--green);
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+}
+.lowerfooter{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+footer .lowerfooter p{
+    color: var(--green);
+    margin-bottom:0 ;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
