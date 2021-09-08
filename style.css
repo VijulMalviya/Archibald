@@ -129,17 +129,21 @@ video{
 }
 
 .Navigationbar{
+    display: none;
     position: fixed;
     z-index: 9999;
     height: 100vh;
     background-color: #0E231A;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   
 }
 .Navigationbar ul{
     margin: 0;
     text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
 }
 .Navigationbar a{
     text-decoration: none;
