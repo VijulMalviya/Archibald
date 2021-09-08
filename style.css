@@ -38,6 +38,64 @@ video{
     height: 100%;
     object-fit: cover;
 }
+/* loader */
+.loader{
+    z-index: 99999999;
+    position: fixed;
+    height: 100vh;
+    background-color: var(--darkgreen);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader .loaderdiv{
+    position: relative;
+    width: 10rem;
+    height: 4rem;
+    /* background-color:red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader .line1{
+    position: absolute;
+    background-color: var(--green);
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    animation: line1 2s ease-in-out 0s infinite alternate-reverse both;
+}
+@keyframes line1 {
+    from{
+        width: 100%;
+    }
+    to{
+        width: 0%;
+    }
+    
+}
+.loader .line2{
+    position: absolute;
+    background-color: var(--green);
+    top: 0;
+    width: 100%;
+    height: 2px;
+    animation: line2 2s ease-in-out 0s infinite alternate-reverse both;
+
+}
+@keyframes line2 {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+    
+}
+.loader img{
+    width: 10rem;
+}
+
 
 /* Navigation */
 
@@ -70,6 +128,30 @@ video{
     margin: 0;
 }
 
+.Navigationbar{
+    position: fixed;
+    z-index: 9999;
+    height: 100vh;
+    background-color: #0E231A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Navigationbar ul{
+    margin: 0;
+    text-align: center;
+}
+.Navigationbar a{
+    text-decoration: none;
+    color: white;
+}
+.Navigationbar ul li{
+    display: block;
+    padding: 0.5rem 1rem;
+    list-style: none;
+    margin: 1rem;
+}
+
 /* Home */
 .Home{
     height: 100vh;
@@ -97,10 +179,13 @@ video{
     font-size: small;
     outline: none;
     background-color: transparent;
+    /* background-color: var(--green); */
     border: 1px solid var(--white);
+    /* border: none; */
     color: var(--white);
     /* font-family: 'Poppins', sans-serif; */
 }
+
 
 /* About */
 
@@ -211,9 +296,7 @@ video{
     border: 10px solid #F1F4F1;
     border-left: 0px;
     border-right: 0;
-
     background-color: #F1F4F1;
-
 }
 
 .p1{
@@ -229,11 +312,20 @@ video{
     background-size: cover;
     background-position: top center;
 }
+
 .Portrait h2{
     font-size: 2rem;
     color: var(--green);
     font-family: 'Bodoni Moda', serif;
-
+}
+.p:hover .portraittext button{
+    transition: 1s;
+    
+    right: 1rem;
+}
+.p:hover{
+    transform: scale(1.05);
+    transition: 1s;
 }
 .Portrait button{
     border: 1px solid var(--green);
@@ -275,12 +367,11 @@ video{
     position: absolute;
     bottom: 2rem;
     right: 2rem;
-    font-size: small;
+    font-size: 2rem;
     color: var(--green);
     background-color: transparent;
 
 }
-
 .OwnDetails{
     height: 70vh;
     display: flex;
@@ -340,15 +431,20 @@ video{
     color: white;
 }
 .Offer .sidebtn{
-    border: 1px solid white;
+    /* border: 1px solid white; */
     border-radius: 50%;
     width: 4rem;
     height: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 1s;
 }
-
+.Offer .sidebtn:hover{
+    font-size: 1rem;
+    background-color: #fff;
+    color: var(--green);
+}
 footer{
     background-color: var(--darkgreen);
 }
@@ -365,7 +461,6 @@ footer ul li{
     list-style: none;
     margin-top: 0.8rem;
     line-height: 1.5rem;
-
 }
 footer .head{
     text-transform: uppercase;

@@ -11,26 +11,49 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="hover.css">
+    <link rel="stylesheet" href="main-hover.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
 
 </head>
 
 <body>
-    <!-- Navigation -->
+    <!-- Loading -->
+    <div class="container-fluid loader">
+        <div class="row">
+            <div class="col-12 loaderdiv">
+                <img src="./Images/logo.svg" alt="">
+                <div class="line1"></div>
+                <div class="line2"></div>
+            </div>
+        </div>
+    </div>
 
-    <div class="container-fluid Navigation  p-3 ">
+    <!-- Navigation -->
+    <div class="container-fluid Navigation  p-3 " data-aos="fade-up" data-aos-delay="700">
         <div class="container">
             <div class="col-lg-10 col-12 mx-auto inner-nav">
                 <img src="./Images/logo.svg" id="Navigationimg" class="img-fluid" alt="">
                 <div class="menu">
-                    <h6>
+                    <h6 id="bars" class="bars">
                         <i class="fa fa-bars"></i>
                     </h6>
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- Navigation-2 -->
+    <div class="col-12 Navigationbar">
+        <ul>
+            <li  class="hvr-bounce-to-right" ><a href="" >Home</a></li>
+            <li class="hvr-bounce-to-right" ><a href="">About</a></li>
+            <li class="hvr-bounce-to-right" ><a href="">Area of Expertise</a></li>
+            <li class="hvr-bounce-to-right" ><a href="">Portrait</a></li>
+            <li class="hvr-bounce-to-right" ><a href="">Contact</a></li>
+
+
+        </ul>
     </div>
 
     <!-- Home -->
@@ -41,14 +64,23 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-10   mx-auto home-inner-data">
-                            <h2 class="col-lg-6 col-md-10 col-12 text-center">
+                            <h2 class="col-lg-6 col-md-10 col-12 text-center" 
+                            data-aos="fade-right"
+                            data-aos-offset="300"
+                            data-aos-delay="600"
+                            data-aos-easing="ease-in-sine">
                                 You are an actor in the
                                 real estate sector or
                                 architecture?
                             </h2>
-                            <p class="col-lg-4 col-md-6 col-12  mt-4 text-center">Let's build your next professional
+                            <p class="col-lg-4 col-md-6 col-12  mt-4 text-center"
+                            data-aos="fade-right" data-aos-delay="700"
+                            >
+                                Let's build your next professional
                                 challenge together</p>
-                            <button class="p-3 mt-2">Our Approach</button>
+                            <button class="p-3 mt-2 hvr-bounce-to-right-home"
+                            data-aos="fade-right" data-aos-delay="800"
+                            >Our Approach</button>
                         </div>
                     </div>
                 </div>
@@ -62,17 +94,19 @@
             <div class="row">
                 <div class="col-10 mx-auto">
                     <div class="row">
-                        <div class="col-lg-2 col-4 about-sidebox">
+                        <div class="col-lg-2 col-4 about-sidebox" data-aos="fade-up" data-aos-delay="800"
+                        data-aos-anchor-placement="top-bottom">
                             <h6><i class="fa fa-chevron-down"></i></h6>
                         </div>
-                        <div class="col-md-10 col-12 about-box p-5">
+                        <div class="col-md-10 col-12 about-box p-5" data-aos="fade-up" data-aos-delay="300"
+                        >
 
                             <div class="col-lg-10 col-12 mx-auto about-text ">
-                                <p>Who is archibald ?</p>
-                                <h6 class="mt-5">We are specialized recruiters, creators of opportunities. Our ambition
+                                <p data-aos="fade-up" data-aos-delay="200">Who is archibald ?</p>
+                                <h6 class="mt-5" data-aos="fade-up" data-aos-delay="400">We are specialized recruiters, creators of opportunities. Our ambition
                                     ? Offer you professional opportunities that are directly linked to your values, your
                                     personality and your skills.</h6>
-                                <button class="p-3 mt-5">Our Approach</button>
+                                <button class="p-3 mt-5 hvr-bounce-to-right" data-aos="fade-up" data-aos-delay="500">Our Approach</button>
                             </div>
                         </div>
                     </div>
@@ -85,29 +119,29 @@
     <div class="container-fluid Expertise" id="Expertise">
         <div class="">
             <div class="row">
-                <div class="col-lg-6 col-12 extpertisebg hide-lg"></div>
+                <div class="col-lg-6 col-12 extpertisebg hide-lg" data-aos="fade-up" data-aos-delay="600"></div>
 
-                <div class="col-lg-6 col-12 Expertisetext">
+                <div class="col-lg-6 col-12 Expertisetext" data-aos="fade-up" data-aos-delay="300">
                     <h2 class="mb-5">Our area of expertise</h2>
                     <div class="row">
                         <div class="col-6">
-                            <h6>Immovable</h6>
-                            <ul>
-                                <li>Developer</li>
-                                <li>Project Menager</li>
-                                <li>Property Manager</li>
-                                <li>Facality Manager</li>
-                                <li>...</li>
+                            <h6 data-aos="fade-up" data-aos-delay="0">Immovable</h6>
+                            <ul class="mt-3">
+                                <li data-aos="fade-up" data-aos-delay="100" >Developer</li>
+                                <li data-aos="fade-up" data-aos-delay="200" >Project Menager</li>
+                                <li data-aos="fade-up" data-aos-delay="300" >Property Manager</li>
+                                <li data-aos="fade-up" data-aos-delay="400" >Facality Manager</li>
+                                <li data-aos="fade-up" data-aos-delay="500" >...</li>
                             </ul>
                         </div>
                         <div class="col-6">
-                            <h6>Executive</h6>
-                            <ul>
-                                <li>CEO / CFO /...</li>
-                                <li>Head of </li>
-                                <li>Director</li>
-                                <li>Manager</li>
-                                <li>...</li>
+                            <h6 data-aos="fade-up" data-aos-delay="0">Executive</h6>
+                            <ul class="mt-3">
+                                <li data-aos="fade-up" data-aos-delay="100" >CEO / CFO /...</li>
+                                <li data-aos="fade-up" data-aos-delay="200" >Head of </li>
+                                <li data-aos="fade-up" data-aos-delay="300" >Director</li>
+                                <li data-aos="fade-up" data-aos-delay="400" >Manager</li>
+                                <li data-aos="fade-up" data-aos-delay="500" >...</li>
                             </ul>
                         </div>
                     </div>
@@ -115,28 +149,28 @@
 
                     <div class="row">
                         <div class="col-6">
-                            <h6>Architecture</h6>
-                            <ul>
-                                <li>Design Architect</li>
-                                <li>Execution Architect</li>
-                                <li>Interior designer</li>
-                                <li>Designer / BIM</li>
-                                <li>...</li>
+                            <h6 data-aos="fade-up" data-aos-delay="0">Architecture</h6>
+                            <ul class="mt-3">
+                                <li data-aos="fade-up" data-aos-delay="100" >Design Architect</li>
+                                <li data-aos="fade-up" data-aos-delay="100" >Execution Architect</li>
+                                <li data-aos="fade-up" data-aos-delay="100" >Interior designer</li>
+                                <li data-aos="fade-up" data-aos-delay="100" >Designer / BIM</li>
+                                <li data-aos="fade-up" data-aos-delay="100">...</li>
                             </ul>
                         </div>
                         <div class="col-6">
-                            <h6>Construction</h6>
-                            <ul>
-                                <li>Engineer</li>
-                                <li>Site Manager </li>
-                                <li>Site Supervisor</li>
-                                <li>Estimator</li>
-                                <li>...</li>
+                            <h6 data-aos="fade-up" data-aos-delay="0">Construction</h6>
+                            <ul class="mt-3">
+                                <li data-aos="fade-up" data-aos-delay="100">Engineer</li>
+                                <li data-aos="fade-up" data-aos-delay="200">Site Manager </li>
+                                <li data-aos="fade-up" data-aos-delay="300" >Site Supervisor</li>
+                                <li data-aos="fade-up" data-aos-delay="400">Estimator</li>
+                                <li data-aos="fade-up" data-aos-delay="500">...</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-12 extpertisebg hide-sm"></div>
+                <div class="col-lg-6 col-12 extpertisebg hide-sm" data-aos="fade-up" data-aos-delay="500"></div>
             </div>
         </div>
     </div>
@@ -147,18 +181,18 @@
             <div class="row">
                 <div class="col-10 mx-auto">
                     <div class="row">
-                        <div class="col-lg-6 col-12 pt-5">
-                            <h2 class="col-lg-6 col-10">We know
+                        <div class="col-lg-6 col-12 pt-5" data-aos="fade-up" data-aos-delay="100">
+                            <h2 class="col-lg-6 col-10" data-aos="fade-up" data-aos-delay="200">We know
                                 your sector</h2>
-                            <p class="col-md-10 col-12 mt-4">Archibald's team is made up of advisers from the real
+                            <p class="col-md-10 col-12 mt-4" data-aos="fade-up" data-aos-delay="300">Archibald's team is made up of advisers from the real
                                 estate and architecture world: we are from the same sector, we speak the same language,
                                 we know your business. Our daily job is to stay continuously connected with your sector
                                 so that we can present you with the most suitable opportunities.</p>
                         </div>
-                        <div class="col-lg-6 col-12 pt-5">
-                            <h2 class="col-lg-6 col-10">We are
+                        <div class="col-lg-6 col-12 pt-5" data-aos="fade-up" data-aos-delay="100">
+                            <h2 class="col-lg-6 col-10" data-aos="fade-up" data-aos-delay="200">We are
                                 your ambassadors</h2>
-                            <p class="col-md-10 col-12 mt-4">If your job is to be the best at what you do, ours is to
+                            <p class="col-md-10 col-12 mt-4" data-aos="fade-up" data-aos-delay="300">If your job is to be the best at what you do, ours is to
                                 let people know. Our goal is to build a long-term relationship based on trust and
                                 transparency. We follow each step of your career and remain at your disposal to support,
                                 advise and represent you.</p>
@@ -171,7 +205,7 @@
 
 
     <!-- Displayimg -->
-    <div class=" container-fluid Displayimg" id="Displayimg">
+    <div class=" container-fluid Displayimg" id="Displayimg" data-aos="fade-up" data-aos-delay="100">
         <div class="row">
             <div class="col-12 displayimg"></div>
         </div>
@@ -183,45 +217,45 @@
             <div class="row">
                 <div class="col-10 mx-auto Portrait">
                     <div class="row">
-                        <h2 class="mt-3 ">In the news</h2>
+                        <h2 class="mt-3 " data-aos="fade-right" data-aos-delay="100">In the news</h2>
                     </div>
-                    <div class="row mt-5 mb-5">
+                    <div class="row mt-5 mb-5 p">
                         <div class="col-lg-8 col-sm-6 col-12 portraitimg1">
-                            <div class="p1 portrait "></div>
+                            <div class="p1 portrait " data-aos="zoom-in-right"></div>
 
                         </div>
                         <div class="col-lg-4 col-sm-6 col-12 portraittext">
                             <div class="col-12" style="padding-left: 1rem;">
-                                <p>Portrait</p>
-                                <h6>June 2021</h6>
-                                <h2 class="mt-5">Wim straetmans</h2>
-                                <h6 class="col-10 mt-4">CEO of Kairos, Administrator of BAM Belgium and BAM interbuild.
+                                <p data-aos="fade-up" data-aos-delay="200">Portrait</p>
+                                <h6 data-aos="fade-up" data-aos-delay="300">June 2021</h6>
+                                <h2 class="mt-5" data-aos="fade-up" data-aos-delay="400">Wim straetmans</h2>
+                                <h6 class="col-10 mt-4" data-aos="fade-up" data-aos-delay="500">CEO of Kairos, Administrator of BAM Belgium and BAM interbuild.
                                 </h6>
-                                <button>Read More</button>
+                                <button class="hvr-forward" data-aos="fade-right" data-aos-delay="600" ><i class="fa fa-long-arrow-right"></i></button>
                             </div>
                         </div>
                     </div>
-                    <div class="row mt-5 mb-5">
+                    <div class="row mt-5 mb-5 p">
                         <div class="col-lg-8 col-sm-6 col-12 portraitimg1 hide-lg">
-                            <div class="p2 portrait "></div>
+                            <div class="p2 portrait" data-aos="zoom-in-right"></div>
                         </div>
-                        <div class="col-lg-4 col-sm-6 col-12 portraittext">
+                        <div class="col-lg-4 col-sm-6 col-12 portraittext ">
 
                             <div class="col-12" style="padding-left: 1rem;">
-                                <p>Portrait</p>
-                                <h6>May 2021</h6>
-                                <h2 class="mt-5">Paul Stasse</h2>
-                                <h6 class="col-10 mt-4">CEO of ACMG, Partner @ ACMG</h6>
-                                <button>Read More</button>
+                                <p data-aos="fade-up" data-aos-delay="200">Portrait</p>
+                                <h6 data-aos="fade-up" data-aos-delay="300">May 2021</h6>
+                                <h2 class="mt-5" data-aos="fade-up" data-aos-delay="400">Paul Stasse</h2>
+                                <h6 class="col-10 mt-4" data-aos="fade-up" data-aos-delay="500">CEO of ACMG, Partner @ ACMG</h6>
+                                <button class="hvr-forward" data-aos="fade-right" data-aos-delay="600"><i class="fa fa-long-arrow-right"></i></button>
                             </div>
                         </div>
                         <div class="col-lg-8 col-sm-6 col-12 portraitimg1 hide-sm">
-                            <div class="p2 portrait "></div>
+                            <div class="p2 portrait " data-aos="zoom-in-right"></div>
                         </div>
                     </div>
                     <div class="row mt-5">
-                        <h3 class="text-center">Enter the universe of inspiring people</h3>
-                        <button class="mt-4 col-lg-3 col-sm-6 col-8 mx-auto p-3">See more portraits</button>
+                        <h3 class="text-center" data-aos="fade-right" data-aos-delay="100">Enter the universe of inspiring people</h3>
+                        <button class="mt-4 col-lg-3 col-sm-6 col-8 mx-auto p-3 hvr-bounce-to-right" data-aos="fade-right" data-aos-delay="300">See more portraits</button>
                     </div>
                 </div>
             </div>
@@ -235,21 +269,21 @@
             <div class="row">
                 <div class="col-10 mx-auto">
                     <div class="row">
-                        <div class="col-lg-6 col-12 p-3  OwnDetails-box">
-                            <div class="col-lg-10 col-12 OwnDetails-text p-5">
-                                <h2>Our Approach</h2>
-                                <p class="mt-5">Let's take the time to identify your values ​​and your skills in order
+                        <div class="col-lg-6 col-12 p-3  OwnDetails-box ">
+                            <div class="col-lg-10 col-12 OwnDetails-text p-5 hvr-grow-shadow" data-aos="fade-up" data-aos-delay="300">
+                                <h2 data-aos="fade-up" data-aos-delay="400">Our Approach</h2>
+                                <p class="mt-5" data-aos="fade-up" data-aos-delay="500">Let's take the time to identify your values ​​and your skills in order
                                     to determine which companies meet your expectations. </p>
-                                <button>know more</button>
+                                <button data-aos="fade-up" data-aos-delay="600">know more</button>
                             </div>
                         </div>
 
-                        <div class="col-lg-6 col-12 p-3 OwnDetails-box ">
-                            <div class="col-lg-10 col-12 OwnDetails-text p-5">
-                                <h2>Discover the opportunities</h2>
-                                <p class="mt-5">Take the time to explore career opportunities and outline your career
+                        <div class="col-lg-6 col-12 p-3 OwnDetails-box  ">
+                            <div class="col-lg-10 col-12 OwnDetails-text p-5 hvr-grow-shadow" data-aos="fade-up" data-aos-delay="300">
+                                <h2 data-aos="fade-up" data-aos-delay="400">Discover the opportunities</h2>
+                                <p class="mt-5" data-aos="fade-up" data-aos-delay="500">Take the time to explore career opportunities and outline your career
                                     goals. </p>
-                                <button>know more</button>
+                                <button data-aos="fade-up" data-aos-delay="600">know more</button>
                             </div>
                         </div>
                     </div>
@@ -259,13 +293,13 @@
     </div>
 
     <!-- Offer -->
-    <div class="container-fluid Offer  pt-5 pb-5" id="Offer">
+    <div class="container-fluid Offer  pt-5 pb-5" id="Offer" data-aos="fade-up" data-aos-delay="300">
         <div class="container">
             <div class="row">
                 <div class="col-10 mx-auto Offer-box">
-                    <h2>Receive our opportunities by email </h2>
-                    <div class="sidebtn">
-                        <i class="fa fa-arrow-right"></i>
+                    <h2 data-aos="fade-right" data-aos-delay="400">Receive our opportunities by email </h2>
+                    <div class="sidebtn hvr-outline-out" data-aos="fade-right" data-aos-delay="500">
+                        <i class="fa fa-long-arrow-right"></i>
                     </div>
                 </div>
             </div>
@@ -281,55 +315,61 @@
                         <div class="col-lg-4 col-sm-3 col-6 footer-logo mt-3">
                             <ul>
                                 <li>
-                            <img src="./Images/logo.svg" class="img-fluid" alt="">
+                            <img src="./Images/logo.svg" class="img-fluid" alt="" data-aos="fade-up" data-aos-delay="100">
 
                                 </li>
                             </ul>
                         </div>
                         <div class="col-lg-3 col-sm-3 col-6 mt-3 ">
                             <ul>
-                                <li>OPPORTUNITIES</li>
-                                <li>OUR APPROACH</li>
-                                <li>Who is Archibald?</li>
-                                <li>Team</li>
-                                <li>Working at Archibald</li>
-                                <li>Portraits</li>
-                                <li>Contact us</li>
-                                <li>Real Estate Golf Cup</li>
+                                <li data-aos="fade-up" data-aos-delay="100" >OPPORTUNITIES</li>
+                                <li data-aos="fade-up" data-aos-delay="200" >OUR APPROACH</li>
+                                <li data-aos="fade-up" data-aos-delay="300" >Who is Archibald?</li>
+                                <li data-aos="fade-up" data-aos-delay="400" >Team</li>
+                                <li data-aos="fade-up" data-aos-delay="500" >Working at Archibald</li>
+                                <li data-aos="fade-up" data-aos-delay="600" >Portraits</li>
+                                <li data-aos="fade-up" data-aos-delay="700" >Contact us</li>
+                                <li data-aos="fade-up" data-aos-delay="800" >Real Estate Golf Cup</li>
                             </ul>
                         </div>
                         <div class="col-lg-2 col-sm-3 col-6 mt-3 ">
                             <ul>
-                                <li class="head">ADDRESSES</li>
-                                <li class="mt-3">Geeta Bhawan,
+                                <li data-aos="fade-up" data-aos-delay="100" class="head">ADDRESSES</li>
+                                <li data-aos="fade-up" data-aos-delay="200" class="mt-3">Geeta Bhawan,
                                     Indore, Madhya Pradesh - 452001
                                 </li>
-                                <li class="mt-4">M P Nagar Zone-2,
+                                <li data-aos="fade-up" data-aos-delay="300" class="mt-4">M P Nagar Zone-2,
                                     Bhopal, Madhya Pradesh - 462001</li>
         
                             </ul>
                         </div>
                         <div class="col-lg-3 col-sm-3 col-6 mt-3 ">
                             <ul>
-                                <li class="head">Contact</li>
-                                <li class="mt-3">+91 98123178467
+                                <li data-aos="fade-up" data-aos-delay="100" class="head">Contact</li>
+                                <li data-aos="fade-up" data-aos-delay="200" class="mt-3">+91 98123178467
                                 </li>
-                                <li class="mt-3">info@archiblad.com</li>
+                                <li data-aos="fade-up" data-aos-delay="300" class="mt-3">info@archiblad.com</li>
         
                             </ul>
                         </div>
                     </div>
                     <div class="row mt-5">
                         <div class= "col-12 mx-auto lowerfooter">
-                        <p class="">Copyright@2021 | Archiblad</p>
+                        <p class="" >Copyright@2021 | Archiblad</p>
                       
-                        <p class="">This Template is Designed by <span class=""><b>Vijul Malviya</b></span></p>
+                        <p class="" >This Template is Designed by <span class=""><b>Vijul Malviya</b></span></p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>  
     <script src="script.js"></script>
 </body>
 
